@@ -1,0 +1,15 @@
+<!-- shapeCalculatorBeans.xml -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Configure ShapeCalculator bean with predefined values -->
+    <bean id="Square" class="com.example.Square">
+        <property name="side" value="10.0"/>
+    </bean>
+    <bean id="circle" class="com.example.Circle">
+        <property name="radius" value="2"/>
+    </bean>
+
+</beans>

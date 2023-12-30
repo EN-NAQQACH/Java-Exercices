@@ -1,0 +1,14 @@
+<!-- shapeCalculatorBeans.xml -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Configure ShapeCalculator bean with predefined values -->
+    <bean id="shapeCalculator1" class="com.example.ShapeCalculator">
+        <property name="defaultRectangleLength" value="10.0"/>
+        <property name="defaultRectangleWidth" value="6.0"/>
+        <property name="defaultCircleRadius" value="5.0"/>
+    </bean>
+
+</beans>

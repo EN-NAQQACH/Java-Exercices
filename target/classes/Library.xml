@@ -1,0 +1,31 @@
+<!-- beans.xml -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="book1" class="com.example.Book">
+        <property name="title" value="book 1 title"/>
+        <property name="author" value="author 1"/>
+    </bean>
+
+    <bean id="reader1" class="com.example.Reader">
+        <property name="name" value="mohssine en-baqqach"/>
+    </bean>
+
+   <bean id="library" class="com.example.Library">
+         <property name="books">
+              <list>
+                    <ref bean="book1" />
+              </list>
+         </property>
+
+         <property name="readers">
+              <list>
+                  <ref bean="reader1" />
+              </list>
+         </property>
+   </bean>
+
+
+</beans>
